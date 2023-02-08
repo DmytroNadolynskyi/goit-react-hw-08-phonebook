@@ -15,7 +15,7 @@ export default function Home() {
             display: { xs: 'none', sm: 'block', textAlign: 'center' },
           }}
         >
-            PHONEBOOK
+          PHONEBOOK
         </Typography>
       </Container>
     </>

@@ -10,19 +10,19 @@ export const AppHeaderBar = () => {
 
   return (
     <>
-      <AppBar  position="static"
-      sx={{
-        p: 2,
-        pr: 6,
-        pl: 6,
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}>
-        
-            <Navigation />
-            {isLoggedIn ? <UserMenu /> : <NavBar />}
-          
+      <AppBar
+        position="static"
+        sx={{
+          p: 2,
+          pr: 6,
+          pl: 6,
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Navigation />
+        {isLoggedIn ? <UserMenu /> : <NavBar />}
       </AppBar>
     </>
   );

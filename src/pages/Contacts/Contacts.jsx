@@ -9,7 +9,6 @@ import { getIsLoading, getError, getContacts } from 'redux/contacts/selectors';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
 
-
 export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
@@ -36,4 +35,4 @@ export default function Contacts() {
       {error && <p>{error}</p>}
     </Conteiner>
   );
-};
+}
